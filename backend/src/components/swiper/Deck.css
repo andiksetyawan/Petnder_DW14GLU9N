@@ -1,0 +1,243 @@
+/* y* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overscroll-behavior-y: contain;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  font-family: Raleway, sans-serif;
+  position: fixed;
+  overflow: hidden;
+} */
+
+#swiperswing {
+  /* background-image: url("/cat_bg.jpg");
+  background-repeat: repeat;
+  background-size: 500px 300px; */
+  /* text-align: center; */
+  /* margin-top: 10vh; */
+  background: transparent;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  cursor: url("https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png")
+      39 39,
+    auto;
+}
+
+#swiperswing > div {
+  margin-top: 10vh;
+
+  position: absolute;
+  /* height: 70vw; */
+
+  width: 70vw;
+  /* height: 100vh; */
+  /* height: 100vh; */
+  margin-top: 100px;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-slide > img {
+  border-radius: 10px !important;
+}
+
+#swiperswing > div > div {
+  /* padding: 5px; */
+  background-color: white;
+  background-size: auto 85%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 300px;
+  max-width: 300px;
+  height: 400px;
+  max-height: 570px;
+  /* width: 300px;
+  max-width: 300px;
+  height: 550px;
+  max-height: 570px; */
+  will-change: transform;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px -10px rgba(50, 50, 73, 0.4),
+    0 10px 10px -10px rgba(50, 50, 73, 0.5);
+  /* box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
+    0 10px 10px -10px rgba(50, 50, 73, 0.3); */
+}
+
+.swiperswing > img {
+  /* height: 100px; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* border-radius: 10px 0; */
+}
+
+.card > button[aria-label="previous"],
+.card > button[aria-label="next"] {
+  background: salmon !important;
+  color: black !important;
+}
+
+/* .card {
+  height: 500px !important;
+  
+} */
+
+.card > div {
+  /* height: 380px !important; */
+  height: 250px !important;
+}
+
+.captionswiper {
+  padding: 10px;
+  /* background-color: transparent; */
+}
+
+.captionswiper > h2 {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* .captionswiper > h2:nth-of-type(2) {
+  opacity: 0.7;
+  font-size: 1.35rem;
+} */
+
+.captionswiper > h5 {
+  margin-top: -15px;
+  margin-left: 2px;
+  color: darkgray;
+}
+/* .captionswiper > h5:last-of-type {
+  color: darkgray;
+} */
+
+.slider-control-centerright {
+}
+
+.slider-control-bottomcenter {
+  bottom: -15px !important;
+}
+
+.slider-control-bottomcenter > ul > li > button {
+  color: salmon !important;
+}
+
+/* .slider-list {
+  height: auto!important;
+}
+
+.slider-slide {
+  position: sticky!important;
+} */
+
+/* 
+
+/////y* {
+  box-sizing: border-box;
+}
+
+/* html,
+body {
+  overscroll-behavior-y: contain;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  font-family: Raleway, sans-serif;
+  position: fixed;
+  overflow: hidden;
+} */
+
+/* #root {
+  background: salmon;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  cursor: url("https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png")
+      39 39,
+    auto;
+} */
+/* 
+#root > div {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root > div > div {
+  padding: 5px;
+  background-color: white;
+  background-size: auto 85%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 300px;
+  max-width: 300px;
+  height: 550px;
+  max-height: 570px;
+  will-change: transform;
+  border-radius: 10px;
+  box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
+    0 10px 10px -10px rgba(50, 50, 73, 0.3);
+}
+
+img {
+  height: 380px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+button[aria-label="previous"],
+button[aria-label="next"] {
+  background: salmon !important;
+  color: black !important;
+}
+
+h2 {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+h2:nth-of-type(2) {
+  opacity: 0.7;
+  font-size: 1.35rem;
+}
+
+h5 {
+  margin-top: -15px;
+  margin-left: 2px;
+  color: lightgray;
+}
+h5:last-of-type {
+  color: darkgray;
+}
+
+.card > div {
+  height: 380px !important;
+}
+
+.card {
+  height: 500px !important;
+}
+
+.slider-control-bottomcenter {
+  bottom: -15px !important;
+}
+
+.slider-control-bottomcenter > ul > li > button {
+  color: salmon !important;
+} */

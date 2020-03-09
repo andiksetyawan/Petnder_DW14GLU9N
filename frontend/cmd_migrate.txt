@@ -1,0 +1,36 @@
+npx sequelize db:create
+
+npx sequelize-cli model:generate --name user --attributes level:enum,breeder:string,email:string,password:string,address:string,phone:string
+npx sequelize-cli model:generate --name species --attributes name:string
+
+/////npx sequelize-cli model:generate --name photo --attributes src:string,pet_id:integer
+/////npx sequelize-cli model:generate --name age --attributes name:string
+/////npx sequelize-cli model:generate --name photo --attributes pet_id:integer,src:string
+////npx sequelize-cli model:generate --name pet --attributes name:string,about:string,gender:enum,user_id:integer,species_id:integer,age_id:integer,photos_id:integer
+
+npx sequelize-cli model:generate --name pet --attributes name:string,about_pet:string,gender:enum,age:enum,photo:string,species_id:integer,user_id:integer
+npx sequelize-cli model:generate --name match --attributes status:boolean,pet_id:integer,pet_liked:integer 
+npx sequelize-cli model:generate --name payment --attributes no_rek:string,proof_of_transfer:string,status:enum,user_id:integer
+
+
+//MATCH USER_ID mngkin tidak perlu
+
+edit dulu folder migrations.. relasi dll. baru next db:migrate
+
+npx sequelize-cli db:migrate
+
+npx sequelize-cli seed:generate --name demo-user
+npx sequelize-cli seed:generate --name demo-age
+npx sequelize-cli seed:generate --name demo-species
+//npx sequelize-cli seed:generate --name demo-photo
+npx sequelize-cli seed:generate --name demo-pet
+npx sequelize-cli seed:generate --name demo-match
+
+npx sequelize db:seed:all
+
+bcrypt
+password:1234
+
+$2b$10$dpn1IZOfxPZhYFoGvftZcOzo140hFIwgHNPWyJqypVHc7VJqj7cRG
+
+$2b$10$Vqn5wxfPA9c3OHECuOoYOOh.5X9JUlef5xIH1EbnanblgkxXHY0y.
