@@ -95,7 +95,9 @@ Wait till the application is opened into your browser. Now, you can explore Petn
 
 ## Screenshots
 
-<img src="docs/screenshots/screenshots.png" />
+<img src="docs/screenshots/landing.png" />
+<img src="docs/screenshots/home.png" />
+<img src="docs/screenshots/profile.png" />
 
 ## Built With
 
